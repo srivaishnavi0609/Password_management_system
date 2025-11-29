@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f2f3f5;
+    color: #222;
+}
+
+header {
+    background: #1a1f36;
+    color: #fff;
+}
+
+.nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #e17cfa;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 0.4rem 0.5rem;
+    margin-top: 0.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid #f8f6f6;
+}
+
+.auth-form button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: #1a6bf2;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.auth-form button:hover {
+    background: #1353bc;
+}
+
+.flash-container {
+    margin-bottom: 1rem;
+}
+
+.flash {
+    padding: 0.75rem 1rem;
+    border-radius: 0.35rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.flash-success {
+    background: #e3f8e5;
+    color: #046c4e;
+}
+
+.flash-danger {
+    background: #fde8e8;
+    color: #b91c1c;
+}
+
+.toolbar {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    background: #1a6bf2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background: #1353bc;
+}
+
+.credentials-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+}
+
+.credentials-table th,
+.credentials-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.credentials-table th {
+    background: #f1f3f8;
+    text-align: left;
+}
+
+.password-row {
+    display: flex;
+}
+
+.password-row input {
+    flex: 1;
+    margin-right: 0.5rem;
+}
+
+.password-row button {
+    flex-shrink: 0;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.25rem;
+    border: none;
+    background: #1a6bf2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.password-row button:hover {
+    background: #1353bc;
+}
+
+.generator-options {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+
+.generator-options label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.generator-options input[type="number"] {
+    width: 60px;
+    margin-left: 0.25rem;
+}
+
+.toggle-pwd-btn,
+.delete-btn {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.toggle-pwd-btn {
+    background: #e5edff;
+    color: #1a3fbf;
+    margin-left: 0.5rem;
+}
+
+.delete-btn {
+    background: #fde8e8;
+    color: #b91c1c;
+}
+
+@media (max-width: 640px) {
+    .credentials-table {
+        font-size: 0.8rem;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        margin-top: 0.5rem;
+    }
+}

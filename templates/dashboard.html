@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Your Passwords</h1>
+
+<div class="toolbar">
+    <a class="btn" href="{{ url_for('add_credential_page') }}">+ Add New Credential</a>
+</div>
+
+<table class="credentials-table" id="cred-table">
+    <thead>
+        <tr>
+            <th>Site</th>
+            <th>URL</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="cred-tbody">
+    </tbody>
+</table>
+
+<p id="empty-msg" style="display: none;">No credentials saved yet.</p>
+{% endblock %}
