@@ -6,30 +6,48 @@ This system uses Flask, SQLAlchemy, Cryptography, and Bcrypt for strong encrypti
 🚀 Features
 
 User registration & login
-
 AES-encrypted password storage
-
 Password generator
-
 Add / view / delete saved credentials
-
 Responsive UI
-
 Session-based authentication
 
 📂 Project Structure
 Password_management_system/
+check if this is your project structure
+
+Password_management_system/
 │
 ├── app.py
-├── database/
-├── static/
-├── templates/
-├── instance/
+│
 ├── app/
+│   ├── _init_.py
+│   ├── routes.py
+│   ├── models.py
+│   └── utils.py
+│
+├── database/
+│   └── password_manager.db
+│
+├── instance/
+│   └── config.py
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│
+├── templates/
+│   ├── add_credential.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   └── base.html
+│
 ├── requirements.txt
 ├── README.md
 ├── LICENSE
 └── .gitignore
+
 
 🛠️ How to Run This Project
 
@@ -52,18 +70,12 @@ venv\Scripts\activate
 
 
 After activation, your terminal will look like:
-
 (venv) D:\Password_management_system>
 
 4️⃣ Install dependencies
-
 If you have a requirements file:
-
 python -m pip install -r requirements.txt
-
-
 Or install manually:
-
 python -m pip install flask flask_sqlalchemy flask-bcrypt cryptography
 
 5️⃣ Run the application
@@ -71,7 +83,6 @@ python app.py
 
 
 The server will start at:
-
 👉 http://127.0.0.1:5000
 
 Open this link in your browser.
@@ -80,9 +91,7 @@ Open this link in your browser.
 ⚠️ Important Notes
 
 The venv folder should NOT be pushed to GitHub (your .gitignore covers this).
-
 This project runs in debug mode and is not meant for production.
-
 The database is stored inside the instance folder.
 
 📝 License
